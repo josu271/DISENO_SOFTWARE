@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUTRIWANKA</title>
+    <link rel="stylesheet" href="../css/Tarjeta.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <!--Servicio al cliente-->
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">906-983-532</span>
+                    </div>
+                </div>
+
+                <!--TITULO-->
+                <div class="container-logo">
+                    <h1 class="logo">
+                        <a href="../index.html">NUTRIWANKA</a>
+                    </h1>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <!--Usuario-->
+                <div class="container-user" >
+                    <a href="Inicio-sesion.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <!--Carrito de compra-->
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <!--Barra de pagina-->
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../index.html">PRODUCTO</a></li>
+                    <li><a href="Recetario.html">Recetario</a></li>
+                    <li><a href="#">MAS</a></li>
+                </ul>
+                <!--Barra de busqueda-->
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..."/>
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+ <!--TARJETA-->
+ <div class="inicio">
+    <div class="formulario">
+        <h1>TARJETA</h1>
+        <FORM method="post" action="../PHP/Tarjeta.php">
+            <div class="correo">
+                <input type="text" required name="Num_tarjeta" id="Num_tarjeta">
+                <label>NUMERO DE TARJETA</label>
+            </div>
+            <div class="correo">
+                <input type="text" required name="MM_AA" id="MM_AA">
+                <label>MM/AA</label>
+            </div>
+            <div class="correo">
+                <input type="text" required name="Nombre" id="Nombre">
+                <label>NOMBRE</label>
+            </div>
+            <div class="correo">
+                <input type="text" required name="Apellido" id="Apellido">
+                <label>APELLIDO</label>
+            </div>
+            <div class="correo">
+                <input type="text" required name="Correo" id="Correo">
+                <label>CORREO ELECTRONICO</label>
+            </div>
+            <input type="submit" value = "COMPRAR">
+            <H1></H1>
+            </div>
+        </FORM>
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/25966f1c30.js" crossorigin="anonymous"></script>
+</body>
+</html>
